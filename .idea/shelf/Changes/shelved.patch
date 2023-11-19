@@ -1,0 +1,2182 @@
+Index: src/META-INF/MANIFEST.MF
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/META-INF/MANIFEST.MF b/src/META-INF/MANIFEST.MF
+new file mode 100644
+--- /dev/null	(date 1697634147542)
++++ b/src/META-INF/MANIFEST.MF	(date 1697634147542)
+@@ -0,0 +1,3 @@
++Manifest-Version: 1.0
++Main-Class: REGISTER
++
+Index: .idea/libraries/jbcrypt.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/jbcrypt.xml b/.idea/libraries/jbcrypt.xml
+new file mode 100644
+--- /dev/null	(date 1697635816097)
++++ b/.idea/libraries/jbcrypt.xml	(date 1697635816097)
+@@ -0,0 +1,9 @@
++<component name="libraryTable">
++  <library name="jbcrypt">
++    <CLASSES>
++      <root url="jar://$USER_HOME$/Downloads/jbcrypt.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES />
++  </library>
++</component>
+\ No newline at end of file
+Index: src/BERANDA.form
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/BERANDA.form b/src/BERANDA.form
+new file mode 100644
+--- /dev/null	(date 1697716881837)
++++ b/src/BERANDA.form	(date 1697716881837)
+@@ -0,0 +1,171 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="BERANDA">
++  <grid id="27dc6" binding="Beranda_Panel" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
++    <margin top="0" left="0" bottom="0" right="0"/>
++    <constraints>
++      <xy x="20" y="20" width="500" height="400"/>
++    </constraints>
++    <properties>
++      <background color="-5778537"/>
++    </properties>
++    <border type="none"/>
++    <children>
++      <component id="6f91d" class="javax.swing.JLabel" binding="Berat_Badan">
++        <constraints>
++          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="Berat Badan(kg)"/>
++        </properties>
++      </component>
++      <component id="56806" class="javax.swing.JLabel" binding="Tinggi_Badan">
++        <constraints>
++          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="Tinggi Badan(m)"/>
++        </properties>
++      </component>
++      <component id="4af19" class="javax.swing.JLabel" binding="IMT_Text">
++        <constraints>
++          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <icon value="icon/calculator (1).png"/>
++          <text value="IMT"/>
++        </properties>
++      </component>
++      <component id="5b068" class="javax.swing.JTextField" binding="Berat_Input">
++        <constraints>
++          <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="47bb4" class="javax.swing.JTextField" binding="Tinggi_Input">
++        <constraints>
++          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="fbe5a" class="javax.swing.JTextField" binding="IMT_Hasil">
++        <constraints>
++          <grid row="5" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties>
++          <editable value="false"/>
++        </properties>
++      </component>
++      <component id="9419b" class="javax.swing.JButton" binding="Hitung_Tombol">
++        <constraints>
++          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <text value="Hitung"/>
++        </properties>
++      </component>
++      <component id="9a3c0" class="javax.swing.JButton" binding="Profile_Tombol">
++        <constraints>
++          <grid row="7" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <text value="Profile"/>
++        </properties>
++      </component>
++      <component id="96dc8" class="javax.swing.JButton" binding="Simpan_Tombol">
++        <constraints>
++          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <text value="Simpan"/>
++        </properties>
++      </component>
++      <component id="3f04b" class="javax.swing.JLabel" binding="Ket_Text">
++        <constraints>
++          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="Keterangan"/>
++        </properties>
++      </component>
++      <component id="1267d" class="javax.swing.JTextField" binding="Ket_Input">
++        <constraints>
++          <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties>
++          <editable value="false"/>
++        </properties>
++      </component>
++      <component id="43581" class="javax.swing.JLabel" binding="Umur_Text">
++        <constraints>
++          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="Umur"/>
++        </properties>
++      </component>
++      <component id="61fb3" class="javax.swing.JLabel" binding="Gender_Text">
++        <constraints>
++          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="Gender"/>
++        </properties>
++      </component>
++      <component id="45008" class="javax.swing.JTextField" binding="textField1" default-binding="true">
++        <constraints>
++          <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="b3131" class="javax.swing.JRadioButton" binding="RadioLaki">
++        <constraints>
++          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <background color="-5778537"/>
++          <selected value="false"/>
++          <text value="Laki-Laki"/>
++        </properties>
++      </component>
++      <component id="ffed3" class="javax.swing.JRadioButton" binding="RadioPeremp">
++        <constraints>
++          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <background color="-5778537"/>
++          <selected value="false"/>
++          <text value="Perempuan"/>
++        </properties>
++      </component>
++      <component id="af17" class="javax.swing.JLabel" binding="Judul_IMT">
++        <constraints>
++          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <font name="JetBrains Mono ExtraBold" size="20" style="1"/>
++          <foreground color="-11184061"/>
++          <icon value="icon/leaf.png"/>
++          <text value="Keep Healty"/>
++          <verticalAlignment value="0"/>
++          <verticalTextPosition value="0"/>
++        </properties>
++      </component>
++    </children>
++  </grid>
++</form>
+Index: .idea/artifacts/IMT_jar.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/artifacts/IMT_jar.xml b/.idea/artifacts/IMT_jar.xml
+new file mode 100644
+--- /dev/null	(date 1697634158871)
++++ b/.idea/artifacts/IMT_jar.xml	(date 1697634158871)
+@@ -0,0 +1,8 @@
++<component name="ArtifactManager">
++  <artifact type="jar" name="IMT:jar">
++    <output-path>$PROJECT_DIR$/out/artifacts/IMT_jar</output-path>
++    <root id="archive" name="IMT.jar">
++      <element id="module-output" name="IMT" />
++    </root>
++  </artifact>
++</component>
+\ No newline at end of file
+Index: src/DatabaseUtil.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/DatabaseUtil.java b/src/DatabaseUtil.java
+new file mode 100644
+--- /dev/null	(date 1699857912618)
++++ b/src/DatabaseUtil.java	(date 1699857912618)
+@@ -0,0 +1,21 @@
++import java.sql.Connection;
++import java.sql.DriverManager;
++import java.sql.SQLException;
++
++public class DatabaseUtil {
++    private static Connection connection;
++
++    public static Connection getConnection() {
++        if (connection == null) {
++            try {
++                String url = "jdbc:mysql://localhost:3306/imt";
++                String user = "root";
++                String password = "";
++                connection = DriverManager.getConnection(url, user, password);
++            } catch (SQLException e) {
++                e.printStackTrace();
++            }
++        }
++        return connection;
++    }
++}
+Index: IMT.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/IMT.iml b/IMT.iml
+new file mode 100644
+--- /dev/null	(date 1699857616080)
++++ b/IMT.iml	(date 1699857616080)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="library" name="postgresql-42.6.0" level="project" />
++    <orderEntry type="library" name="jbcrypt" level="project" />
++    <orderEntry type="library" name="mysql-connector-j-8.2.0" level="project" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+new file mode 100644
+--- /dev/null	(date 1696400725065)
++++ b/.idea/uiDesigner.xml	(date 1696400725065)
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+Index: src/REGISTER.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/REGISTER.java b/src/REGISTER.java
+new file mode 100644
+--- /dev/null	(date 1699899234746)
++++ b/src/REGISTER.java	(date 1699899234746)
+@@ -0,0 +1,66 @@
++import javax.swing.*;
++import java.awt.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.SQLException;
++
++
++public class REGISTER {
++    private JPanel RegisterPanel;
++    private JLabel Judul_Register;
++    private JLabel First_Name;
++    private JLabel Last_Name;
++    private JLabel Email;
++    private JLabel Password;
++    private JLabel Re_Password;
++    private JTextField Fname_Input;
++    private JTextField Lname_Input;
++    private JTextField Email_Input;
++    private JPasswordField Password_Input;
++    private JPasswordField Repassword_Input;
++    private JButton Register_Button;
++
++    public JPanel getRegisterPanel() {
++        return RegisterPanel;
++    }
++
++    public REGISTER() {
++        Register_Button.addActionListener(new ActionListener() {
++            @Override
++            public void actionPerformed(ActionEvent e) {
++                String fname = Fname_Input.getText();
++                String lname = Lname_Input.getText();
++                String email = Email_Input.getText();
++                String password = new String(Password_Input.getPassword());
++
++                // Simpan data ke database
++                Connection connection = DatabaseUtil.getConnection();
++                try {
++                    String sql = "INSERT INTO pengguna (fname, lname, email, password) VALUES (?, ?, ?, ?)";
++                    PreparedStatement statement = connection.prepareStatement(sql);
++                    statement.setString(1, fname);
++                    statement.setString(2, lname);
++                    statement.setString(3, email);
++                    statement.setString(4, password);
++                    statement.executeUpdate();
++                    JOptionPane.showMessageDialog(RegisterPanel, "Registrasi berhasil!");
++                } catch (SQLException ex) {
++                    ex.printStackTrace();
++                    JOptionPane.showMessageDialog(RegisterPanel, "Registrasi gagal!");
++                }
++            }
++        });
++    }
++
++    public static void main(String[] args) {
++        JFrame frame = new JFrame("Registration Form");
++        REGISTER registerForm = new REGISTER();
++        frame.setContentPane(registerForm.getRegisterPanel());
++        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
++        frame.setMinimumSize(new Dimension(800, 600)); // Set the minimum size here
++        frame.pack();
++        frame.setVisible(true);
++    }
++}
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1696399878126)
++++ b/.idea/modules.xml	(date 1696399878126)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/IMT.iml" filepath="$PROJECT_DIR$/IMT.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1700377490238)
++++ b/.idea/vcs.xml	(date 1700377490238)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/REGISTER.form
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/REGISTER.form b/src/REGISTER.form
+new file mode 100644
+--- /dev/null	(date 1697705970956)
++++ b/src/REGISTER.form	(date 1697705970956)
+@@ -0,0 +1,126 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="REGISTER">
++  <grid id="27dc6" binding="RegisterPanel" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
++    <margin top="0" left="0" bottom="0" right="0"/>
++    <constraints>
++      <xy x="20" y="20" width="500" height="400"/>
++    </constraints>
++    <properties>
++      <background color="-5778537"/>
++    </properties>
++    <border type="none"/>
++    <children>
++      <component id="f1ee8" class="javax.swing.JLabel" binding="First_Name">
++        <constraints>
++          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="First Name"/>
++        </properties>
++      </component>
++      <component id="65a77" class="javax.swing.JLabel" binding="Last_Name">
++        <constraints>
++          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="Last Name"/>
++        </properties>
++      </component>
++      <component id="6260" class="javax.swing.JLabel" binding="Email">
++        <constraints>
++          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="E-mail Address"/>
++        </properties>
++      </component>
++      <component id="642f0" class="javax.swing.JLabel" binding="Password">
++        <constraints>
++          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <background color="-13947600"/>
++          <foreground color="-11184061"/>
++          <text value="Password"/>
++        </properties>
++      </component>
++      <component id="86f6a" class="javax.swing.JLabel" binding="Re_Password">
++        <constraints>
++          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <background color="-13947600"/>
++          <foreground color="-11184061"/>
++          <text value="Re-type_Password"/>
++        </properties>
++      </component>
++      <component id="e49f4" class="javax.swing.JTextField" binding="Fname_Input">
++        <constraints>
++          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties>
++          <background color="-1"/>
++          <foreground color="-16777216"/>
++        </properties>
++      </component>
++      <component id="7ab26" class="javax.swing.JTextField" binding="Lname_Input">
++        <constraints>
++          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="cc00c" class="javax.swing.JTextField" binding="Email_Input">
++        <constraints>
++          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="6a677" class="javax.swing.JPasswordField" binding="Password_Input">
++        <constraints>
++          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="4845a" class="javax.swing.JPasswordField" binding="Repassword_Input">
++        <constraints>
++          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="4db63" class="javax.swing.JButton" binding="Register_Button">
++        <constraints>
++          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <background color="-262157"/>
++          <foreground color="-11184061"/>
++          <text value="Register"/>
++        </properties>
++      </component>
++      <component id="e9d28" class="javax.swing.JLabel" binding="Judul_Register">
++        <constraints>
++          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <font name="JetBrains Mono ExtraBold" size="20" style="1"/>
++          <foreground color="-11184061"/>
++          <icon value="icon/notes.png"/>
++          <text value="Register"/>
++        </properties>
++      </component>
++    </children>
++  </grid>
++</form>
+Index: .idea/libraries/mysql_connector_j_8_2_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/mysql_connector_j_8_2_0.xml b/.idea/libraries/mysql_connector_j_8_2_0.xml
+new file mode 100644
+--- /dev/null	(date 1699857616168)
++++ b/.idea/libraries/mysql_connector_j_8_2_0.xml	(date 1699857616168)
+@@ -0,0 +1,9 @@
++<component name="libraryTable">
++  <library name="mysql-connector-j-8.2.0">
++    <CLASSES>
++      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0/mysql-connector-j-8.2.0.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES />
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1699883869255)
++++ b/.idea/misc.xml	(date 1699883869255)
+@@ -0,0 +1,5 @@
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" project-jdk-name="openjdk-21" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/PROFILE.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/PROFILE.java b/src/PROFILE.java
+new file mode 100644
+--- /dev/null	(date 1700316948761)
++++ b/src/PROFILE.java	(date 1700316948761)
+@@ -0,0 +1,178 @@
++import javax.swing.*;
++import java.awt.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import java.sql.SQLException;
++
++public class PROFILE {
++    private JButton Edit_Tombol;
++    private JTextField Field_FirstName;  // Updated field name for first name
++    private JTextField Field_LastName;   // Updated field name for last name
++    private JTextField Field_Email;
++    private JPasswordField Field_Password;
++    private JButton Hapus_Tombol;
++    private JLabel fname_label;
++    private JLabel lname_label;
++    private JLabel email_label;
++    private JLabel password_label;
++    private JPanel ProfilePanel; // Initialize the ProfilePanel
++
++    // Assuming you have a method to get the database connection
++    private Connection connection = DatabaseUtil.getConnection();
++
++    public PROFILE() {
++        Edit_Tombol.addActionListener(new ActionListener() {
++            @Override
++            public void actionPerformed(ActionEvent e) {
++                updateProfile();
++            }
++        });
++        Hapus_Tombol.addActionListener(new ActionListener() {
++            @Override
++            public void actionPerformed(ActionEvent e) {
++                deleteUser();
++            }
++        });
++    }
++
++    private void updateProfile() {
++        // Get values from the input fields
++        String newFirstName = Field_FirstName.getText();  // Updated variable name for first name
++        String newLastName = Field_LastName.getText();    // Updated variable name for last name
++        String newEmail = Field_Email.getText();
++        char[] newPassword = Field_Password.getPassword();
++        String newPasswordString = new String(newPassword);
++
++        // Assuming you have a user ID or some identifier to identify the user in the database
++        int userId = getUserId(); // Implement this method to get the user ID
++
++        // Update only the non-empty fields
++        if (!newFirstName.isEmpty()) {
++            updateField("fname", newFirstName, userId);
++        }
++        if (!newLastName.isEmpty()) {
++            updateField("lname", newLastName, userId);
++        }
++        if (!newEmail.isEmpty()) {
++            updateField("email", newEmail, userId);
++        }
++        if (!newPasswordString.isEmpty()) {
++            updateField("password", newPasswordString, userId);
++        }
++
++        // Show a message to the user
++        JOptionPane.showMessageDialog(null, "Profile updated successfully!");
++
++        // You may also add some feedback to the user indicating that the update was successful
++    }
++
++    private void updateField(String fieldName, String value, int userId) {
++        try {
++            String columnName = getColumnName(fieldName);
++            String query = "UPDATE pengguna SET " + columnName + " = ? WHERE id = ?";
++            System.out.println("Generated SQL Query: " + query);  // Print the generated query
++            PreparedStatement preparedStatement = connection.prepareStatement(query);
++            preparedStatement.setString(1, value);
++            preparedStatement.setInt(2, userId);
++            preparedStatement.executeUpdate();
++        } catch (SQLException e) {
++            e.printStackTrace();
++            // Handle the exception (e.g., show an error message to the user)
++        }
++    }
++
++    // Method to map field names to column names
++    private String getColumnName(String fieldName) {
++        // Implement your logic to map field names to column names
++        // Retrieve the actual column names from the database
++        // For simplicity, assuming field names are the same as column names
++        try {
++            // Assuming 'pengguna' is the name of your table
++            java.sql.DatabaseMetaData meta = connection.getMetaData();
++            java.sql.ResultSet res = meta.getColumns(null, null, "pengguna", null);
++            System.out.println("Actual column names in the 'pengguna' table:");
++            while (res.next()) {
++                String columnName = res.getString("COLUMN_NAME");
++                System.out.println(columnName);
++                if (columnName.equals(fieldName)) {
++                    return columnName;
++                }
++            }
++        } catch (SQLException e) {
++            e.printStackTrace();
++        }
++        return fieldName;
++    }
++
++    private void deleteUser() {
++        String userEmail = Field_Email.getText();
++        char[] userPassword = Field_Password.getPassword();
++        String userPasswordString = new String(userPassword);
++
++        // Assuming you have a user ID or some identifier to identify the user in the database
++        int userId = getUserId(); // Implement this method to get the user ID
++
++        // Check if email and password match before deletion
++        if (validateUser(userEmail, userPasswordString)) {
++            try {
++                String query = "DELETE FROM pengguna WHERE id = ?";
++                System.out.println("Generated SQL Query: " + query);
++                PreparedStatement preparedStatement = connection.prepareStatement(query);
++                preparedStatement.setInt(1, userId);
++                preparedStatement.executeUpdate();
++
++                // Show a message to the user
++                JOptionPane.showMessageDialog(null, "User deleted successfully!");
++            } catch (SQLException ex) {
++                ex.printStackTrace();
++                // Handle the exception (e.g., show an error message to the user)
++            }
++        } else {
++            JOptionPane.showMessageDialog(null, "Invalid email or password. Deletion failed.");
++        }
++    }
++
++    private boolean validateUser(String userEmail, String userPassword) {
++        try {
++            String query = "SELECT id FROM pengguna WHERE email = ? AND password = ?";
++            PreparedStatement preparedStatement = connection.prepareStatement(query);
++            preparedStatement.setString(1, userEmail);
++            preparedStatement.setString(2, userPassword);
++            ResultSet resultSet = preparedStatement.executeQuery();
++
++            // Check if there is a user with the provided email and password
++            return resultSet.next();
++        } catch (SQLException e) {
++            e.printStackTrace();
++            // Handle the exception (e.g., show an error message to the user)
++        }
++        return false;
++    }
++    // Implement this method to get the user ID from your application
++    private int getUserId() {
++        // Return the user ID
++        return 2; // Change this to your actual logic
++    }
++
++    public static void main(String[] args) {
++        SwingUtilities.invokeLater(new Runnable() {
++            @Override
++            public void run() {
++                createAndShowGUI();
++            }
++        });
++    }
++
++    private static void createAndShowGUI() {
++        JFrame frame = new JFrame("Profile Form");
++        PROFILE profileForm = new PROFILE();
++        frame.setContentPane(profileForm.ProfilePanel);
++        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
++        frame.setMinimumSize(new Dimension(800, 600));
++        frame.pack();
++        frame.setVisible(true);
++    }
++}
+Index: src/BERANDA.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/BERANDA.java b/src/BERANDA.java
+new file mode 100644
+--- /dev/null	(date 1699900198887)
++++ b/src/BERANDA.java	(date 1699900198887)
+@@ -0,0 +1,223 @@
++import javax.swing.*;
++import java.awt.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.SQLException;
++import java.text.DecimalFormat;
++
++public class BERANDA {
++    private JFrame frame;
++    private JLabel Judul_IMT;
++    private JLabel Berat_Badan;
++    private JLabel Tinggi_Badan;
++    private JLabel IMT_Text;
++    private JTextField Berat_Input;
++    private JTextField Tinggi_Input;
++    private JTextField IMT_Hasil;
++    private JButton Hitung_Tombol;
++    private JButton Profile_Tombol;
++    private JButton Simpan_Tombol;
++    private JPanel Beranda_Panel;
++    private JLabel Ket_Text;
++    private JTextField Ket_Input;
++    private JLabel Umur_Text;
++    private JLabel Gender_Text;
++    private JTextField textField1;
++    private JRadioButton RadioLaki;
++    private JRadioButton RadioPeremp;
++
++    public BERANDA() {
++        frame = new JFrame("BERANDA");
++        ButtonGroup genderGroup = new ButtonGroup();
++        genderGroup.add(RadioLaki);
++        genderGroup.add(RadioPeremp);
++
++        Hitung_Tombol.addActionListener(new ActionListener() {
++            @Override
++            public void actionPerformed(ActionEvent e) {
++                double Berat, Tinggi, IMT, umur;
++                String gender;
++
++                Berat = Double.parseDouble(Berat_Input.getText().replace(",", "."));
++                Tinggi = Double.parseDouble(Tinggi_Input.getText().replace(",", "."));
++                umur = Double.parseDouble(textField1.getText().replace(",", "."));
++
++                gender = "";
++                if (RadioLaki.isSelected()) {
++                    gender = "Laki-Laki";
++                } else if (RadioPeremp.isSelected()) {
++                    gender = "Perempuan";
++                }
++
++                IMT = Berat / (Tinggi * Tinggi);
++
++                DecimalFormat decimalFormat = new DecimalFormat("#.##");
++                String hasilIMT = decimalFormat.format(IMT);
++
++                IMT_Hasil.setText(hasilIMT);
++
++                String keterangan = "";
++
++                if (gender.equals("Laki-Laki")) {
++                    if (umur <= 24) {
++                        if (IMT < 18.5) {
++                            keterangan = "Kurus";
++                        } else if (IMT < 23.9) {
++                            keterangan = "Normal";
++                        } else if (IMT < 28.9) {
++                            keterangan = "Gemuk";
++                        } else {
++                            keterangan = "Obesitas";
++                        }
++                    } else {
++                        if (IMT < 20.7) {
++                            keterangan = "Kurus";
++                        } else if (IMT < 26.4) {
++                            keterangan = "Normal";
++                        } else if (IMT < 31.1) {
++                            keterangan = "Gemuk";
++                        } else {
++                            keterangan = "Obesitas";
++                        }
++                    }
++                } else if (gender.equals("Perempuan")) {
++                    if (umur <= 24) {
++                        if (IMT < 17.9) {
++                            keterangan = "Kurus";
++                        } else if (IMT < 22.9) {
++                            keterangan = "Normal";
++                        } else if (IMT < 27.3) {
++                            keterangan = "Gemuk";
++                        } else {
++                            keterangan = "Obesitas";
++                        }
++                    } else {
++                        if (IMT < 19.6) {
++                            keterangan = "Kurus";
++                        } else if (IMT < 27.1) {
++                            keterangan = "Normal";
++                        } else if (IMT < 32.9) {
++                            keterangan = "Gemuk";
++                        } else {
++                            keterangan = "Obesitas";
++                        }
++                    }
++                }
++
++                Ket_Input.setText(keterangan);
++            }
++        });
++        Simpan_Tombol.addActionListener(new ActionListener() {
++            @Override
++            public void actionPerformed(ActionEvent e) {
++                // Mengambil nilai-nilai yang diperlukan dari inputan
++                double Berat, Tinggi, IMT, umur;
++                String gender;
++
++                Berat = Double.parseDouble(Berat_Input.getText().replace(",", "."));
++                Tinggi = Double.parseDouble(Tinggi_Input.getText().replace(",", "."));
++                umur = Double.parseDouble(textField1.getText().replace(",", "."));
++
++                gender = "";
++                if (RadioLaki.isSelected()) {
++                    gender = "Laki-Laki";
++                } else if (RadioPeremp.isSelected()) {
++                    gender = "Perempuan";
++                }
++
++                IMT = Berat / (Tinggi * Tinggi);
++
++                DecimalFormat decimalFormat = new DecimalFormat("#.##");
++                String hasilIMT = decimalFormat.format(IMT);
++
++                IMT_Hasil.setText(hasilIMT);
++
++                String keterangan = "";
++
++                if (gender.equals("Laki-Laki")) {
++                    if (umur <= 24) {
++                        if (IMT < 18.5) {
++                            keterangan = "Kurus";
++                        } else if (IMT < 23.9) {
++                            keterangan = "Normal";
++                        } else if (IMT < 28.9) {
++                            keterangan = "Gemuk";
++                        } else {
++                            keterangan = "Obesitas";
++                        }
++                    } else {
++                        if (IMT < 20.7) {
++                            keterangan = "Kurus";
++                        } else if (IMT < 26.4) {
++                            keterangan = "Normal";
++                        } else if (IMT < 31.1) {
++                            keterangan = "Gemuk";
++                        } else {
++                            keterangan = "Obesitas";
++                        }
++                    }
++                } else if (gender.equals("Perempuan")) {
++                    if (umur <= 24) {
++                        if (IMT < 17.9) {
++                            keterangan = "Kurus";
++                        } else if (IMT < 22.9) {
++                            keterangan = "Normal";
++                        } else if (IMT < 27.3) {
++                            keterangan = "Gemuk";
++                        } else {
++                            keterangan = "Obesitas";
++                        }
++                    } else {
++                        if (IMT < 19.6) {
++                            keterangan = "Kurus";
++                        } else if (IMT < 27.1) {
++                            keterangan = "Normal";
++                        } else if (IMT < 32.9) {
++                            keterangan = "Gemuk";
++                        } else {
++                            keterangan = "Obesitas";
++                        }
++                    }
++                }
++
++                Ket_Input.setText(keterangan);
++
++                // Sekarang, Anda dapat menyimpan data ini ke dalam tabel di database.
++                // Pastikan Anda memiliki koneksi database yang benar di sini dan gantilah dengan query SQL INSERT yang sesuai.
++                Connection connection = DatabaseUtil.getConnection();
++                if (connection != null) {
++                    try {
++                        String insertQuery = "INSERT INTO imtpengguna (berat, tinggi, umur, gender, nilai_imt, keterangan) VALUES (?, ?, ?, ?, ?, ?)";
++                        PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
++                        preparedStatement.setDouble(1, Berat);
++                        preparedStatement.setDouble(2, Tinggi);
++                        preparedStatement.setDouble(3, umur);
++                        preparedStatement.setString(4, gender);
++                        preparedStatement.setDouble(5, IMT);
++                        preparedStatement.setString(6, keterangan);
++                        preparedStatement.executeUpdate();
++
++                        JOptionPane.showMessageDialog(frame, "Data berhasil disimpan ke dalam database.");
++                    } catch (SQLException ex) {
++                        ex.printStackTrace();
++                        JOptionPane.showMessageDialog(frame, "Gagal menyimpan data ke dalam database.");
++                    }
++                }
++            }
++        });
++    }
++
++    public static void main(String[] args) {
++        new BERANDA().createAndShowGUI();
++    }
++
++    public void createAndShowGUI() {
++        frame.setContentPane(Beranda_Panel);
++        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
++        frame.setMinimumSize(new Dimension(800, 600));
++        frame.pack();
++        frame.setVisible(true);
++    }
++}
+Index: .idea/libraries/postgresql_42_6_0.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/postgresql_42_6_0.xml b/.idea/libraries/postgresql_42_6_0.xml
+new file mode 100644
+--- /dev/null	(date 1697634470558)
++++ b/.idea/libraries/postgresql_42_6_0.xml	(date 1697634470558)
+@@ -0,0 +1,9 @@
++<component name="libraryTable">
++  <library name="postgresql-42.6.0">
++    <CLASSES>
++      <root url="jar://$USER_HOME$/Downloads/postgresql-42.6.0.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES />
++  </library>
++</component>
+\ No newline at end of file
+Index: .idea/dbnavigator.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dbnavigator.xml b/.idea/dbnavigator.xml
+new file mode 100644
+--- /dev/null	(date 1699928036553)
++++ b/.idea/dbnavigator.xml	(date 1699928036553)
+@@ -0,0 +1,540 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="DBNavigator.Project.DataEditorManager">
++    <record-view-column-sorting-type value="BY_INDEX" />
++    <value-preview-text-wrapping value="false" />
++    <value-preview-pinned value="false" />
++  </component>
++  <component name="DBNavigator.Project.DatabaseBrowserManager">
++    <autoscroll-to-editor value="false" />
++    <autoscroll-from-editor value="true" />
++    <show-object-properties value="true" />
++    <loaded-nodes />
++  </component>
++  <component name="DBNavigator.Project.DatabaseConsoleManager">
++    <connection id="d19df833-354d-457e-b1a6-1106e3bfb6d2">
++      <console name="IMT" type="STANDARD" schema="" session="Main" />
++    </connection>
++  </component>
++  <component name="DBNavigator.Project.DatabaseEditorStateManager">
++    <last-used-providers />
++  </component>
++  <component name="DBNavigator.Project.DatabaseFileManager">
++    <open-files />
++  </component>
++  <component name="DBNavigator.Project.DatasetFilterManager">
++    <filter-actions connection-id="381742e7-2859-47bf-b9bc-a2c0f974b424" dataset="imt.imtpengguna" active-filter-id="" />
++  </component>
++  <component name="DBNavigator.Project.ExecutionManager">
++    <retain-sticky-names value="false" />
++  </component>
++  <component name="DBNavigator.Project.MethodExecutionManager">
++    <method-browser />
++    <execution-history>
++      <group-entries value="true" />
++      <execution-inputs />
++    </execution-history>
++    <argument-values-cache />
++  </component>
++  <component name="DBNavigator.Project.ObjectQuickFilterManager">
++    <last-used-operator value="EQUAL" />
++    <filters />
++  </component>
++  <component name="DBNavigator.Project.Settings">
++    <connections>
++      <connection id="d19df833-354d-457e-b1a6-1106e3bfb6d2" active="true" signed="true">
++        <database>
++          <name value="IMT" />
++          <description value="" />
++          <database-type value="MYSQL" />
++          <config-type value="BASIC" />
++          <database-version value="5.5" />
++          <driver-source value="EXTERNAL" />
++          <driver-library value="C:\Users\rizky\Downloads\mysql-connector-j-8.2.0\mysql-connector-j-8.2.0\mysql-connector-j-8.2.0.jar" />
++          <driver value="com.mysql.cj.jdbc.Driver" />
++          <url-type value="DATABASE" />
++          <host value="localhost" />
++          <port value="3306" />
++          <database value="imt" />
++          <tns-folder value="" />
++          <tns-profile value="" />
++          <type value="USER" />
++          <user value="root" />
++          <deprecated-pwd value="" />
++        </database>
++        <properties>
++          <auto-commit value="false" />
++        </properties>
++        <ssh-settings>
++          <active value="false" />
++          <proxy-host value="" />
++          <proxy-port value="22" />
++          <proxy-user value="" />
++          <deprecated-proxy-pwd value="" />
++          <auth-type value="PASSWORD" />
++          <key-file value="" />
++          <key-passphrase value="" />
++        </ssh-settings>
++        <ssl-settings>
++          <active value="false" />
++          <certificate-authority-file value="" />
++          <client-certificate-file value="" />
++          <client-key-file value="" />
++        </ssl-settings>
++        <details>
++          <charset value="UTF-8" />
++          <session-management value="true" />
++          <ddl-file-binding value="true" />
++          <database-logging value="true" />
++          <connect-automatically value="true" />
++          <restore-workspace value="true" />
++          <restore-workspace-deep value="false" />
++          <environment-type value="default" />
++          <connectivity-timeout value="30" />
++          <idle-time-to-disconnect value="30" />
++          <idle-time-to-disconnect-pool value="5" />
++          <credential-expiry-time value="10" />
++          <max-connection-pool-size value="7" />
++          <alternative-statement-delimiter value="" />
++        </details>
++        <debugger>
++          <compile-dependencies value="true" />
++          <tcp-driver-tunneling value="false" />
++          <tcp-host-address value="" />
++          <tcp-port-from value="4000" />
++          <tcp-port-to value="4999" />
++        </debugger>
++        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
++          <object-type-filter>
++            <object-type name="SCHEMA" enabled="true" />
++            <object-type name="USER" enabled="true" />
++            <object-type name="ROLE" enabled="true" />
++            <object-type name="PRIVILEGE" enabled="true" />
++            <object-type name="CHARSET" enabled="true" />
++            <object-type name="TABLE" enabled="true" />
++            <object-type name="VIEW" enabled="true" />
++            <object-type name="MATERIALIZED_VIEW" enabled="true" />
++            <object-type name="NESTED_TABLE" enabled="true" />
++            <object-type name="COLUMN" enabled="true" />
++            <object-type name="INDEX" enabled="true" />
++            <object-type name="CONSTRAINT" enabled="true" />
++            <object-type name="DATASET_TRIGGER" enabled="true" />
++            <object-type name="DATABASE_TRIGGER" enabled="true" />
++            <object-type name="SYNONYM" enabled="true" />
++            <object-type name="SEQUENCE" enabled="true" />
++            <object-type name="PROCEDURE" enabled="true" />
++            <object-type name="FUNCTION" enabled="true" />
++            <object-type name="PACKAGE" enabled="true" />
++            <object-type name="TYPE" enabled="true" />
++            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
++            <object-type name="ARGUMENT" enabled="true" />
++            <object-type name="DIMENSION" enabled="true" />
++            <object-type name="CLUSTER" enabled="true" />
++            <object-type name="DBLINK" enabled="true" />
++          </object-type-filter>
++          <object-name-filters />
++        </object-filters>
++      </connection>
++    </connections>
++    <browser-settings>
++      <general>
++        <display-mode value="TABBED" />
++        <navigation-history-size value="100" />
++        <show-object-details value="false" />
++      </general>
++      <filters>
++        <object-type-filter>
++          <object-type name="SCHEMA" enabled="true" />
++          <object-type name="USER" enabled="true" />
++          <object-type name="ROLE" enabled="true" />
++          <object-type name="PRIVILEGE" enabled="true" />
++          <object-type name="CHARSET" enabled="true" />
++          <object-type name="TABLE" enabled="true" />
++          <object-type name="VIEW" enabled="true" />
++          <object-type name="MATERIALIZED_VIEW" enabled="true" />
++          <object-type name="NESTED_TABLE" enabled="true" />
++          <object-type name="COLUMN" enabled="true" />
++          <object-type name="INDEX" enabled="true" />
++          <object-type name="CONSTRAINT" enabled="true" />
++          <object-type name="DATASET_TRIGGER" enabled="true" />
++          <object-type name="DATABASE_TRIGGER" enabled="true" />
++          <object-type name="SYNONYM" enabled="true" />
++          <object-type name="SEQUENCE" enabled="true" />
++          <object-type name="PROCEDURE" enabled="true" />
++          <object-type name="FUNCTION" enabled="true" />
++          <object-type name="PACKAGE" enabled="true" />
++          <object-type name="TYPE" enabled="true" />
++          <object-type name="TYPE_ATTRIBUTE" enabled="true" />
++          <object-type name="ARGUMENT" enabled="true" />
++          <object-type name="DIMENSION" enabled="true" />
++          <object-type name="CLUSTER" enabled="true" />
++          <object-type name="DBLINK" enabled="true" />
++        </object-type-filter>
++      </filters>
++      <sorting>
++        <object-type name="COLUMN" sorting-type="NAME" />
++        <object-type name="FUNCTION" sorting-type="NAME" />
++        <object-type name="PROCEDURE" sorting-type="NAME" />
++        <object-type name="ARGUMENT" sorting-type="POSITION" />
++        <object-type name="TYPE ATTRIBUTE" sorting-type="POSITION" />
++      </sorting>
++      <default-editors>
++        <object-type name="VIEW" editor-type="SELECTION" />
++        <object-type name="PACKAGE" editor-type="SELECTION" />
++        <object-type name="TYPE" editor-type="SELECTION" />
++      </default-editors>
++    </browser-settings>
++    <navigation-settings>
++      <lookup-filters>
++        <lookup-objects>
++          <object-type name="SCHEMA" enabled="true" />
++          <object-type name="USER" enabled="false" />
++          <object-type name="ROLE" enabled="false" />
++          <object-type name="PRIVILEGE" enabled="false" />
++          <object-type name="CHARSET" enabled="false" />
++          <object-type name="TABLE" enabled="true" />
++          <object-type name="VIEW" enabled="true" />
++          <object-type name="MATERIALIZED VIEW" enabled="true" />
++          <object-type name="INDEX" enabled="true" />
++          <object-type name="CONSTRAINT" enabled="true" />
++          <object-type name="DATASET TRIGGER" enabled="true" />
++          <object-type name="DATABASE TRIGGER" enabled="true" />
++          <object-type name="SYNONYM" enabled="false" />
++          <object-type name="SEQUENCE" enabled="true" />
++          <object-type name="PROCEDURE" enabled="true" />
++          <object-type name="FUNCTION" enabled="true" />
++          <object-type name="PACKAGE" enabled="true" />
++          <object-type name="TYPE" enabled="true" />
++          <object-type name="DIMENSION" enabled="false" />
++          <object-type name="CLUSTER" enabled="false" />
++          <object-type name="DBLINK" enabled="true" />
++        </lookup-objects>
++        <force-database-load value="false" />
++        <prompt-connection-selection value="true" />
++        <prompt-schema-selection value="true" />
++      </lookup-filters>
++    </navigation-settings>
++    <dataset-grid-settings>
++      <general>
++        <enable-zooming value="true" />
++        <enable-column-tooltip value="true" />
++      </general>
++      <sorting>
++        <nulls-first value="true" />
++        <max-sorting-columns value="4" />
++      </sorting>
++      <audit-columns>
++        <column-names value="" />
++        <visible value="true" />
++        <editable value="false" />
++      </audit-columns>
++    </dataset-grid-settings>
++    <dataset-editor-settings>
++      <text-editor-popup>
++        <active value="false" />
++        <active-if-empty value="false" />
++        <data-length-threshold value="100" />
++        <popup-delay value="1000" />
++      </text-editor-popup>
++      <values-actions-popup>
++        <show-popup-button value="true" />
++        <element-count-threshold value="1000" />
++        <data-length-threshold value="250" />
++      </values-actions-popup>
++      <general>
++        <fetch-block-size value="100" />
++        <fetch-timeout value="30" />
++        <trim-whitespaces value="true" />
++        <convert-empty-strings-to-null value="true" />
++        <select-content-on-cell-edit value="true" />
++        <large-value-preview-active value="true" />
++      </general>
++      <filters>
++        <prompt-filter-dialog value="true" />
++        <default-filter-type value="BASIC" />
++      </filters>
++      <qualified-text-editor text-length-threshold="300">
++        <content-types>
++          <content-type name="Text" enabled="true" />
++          <content-type name="Properties" enabled="true" />
++          <content-type name="XML" enabled="true" />
++          <content-type name="DTD" enabled="true" />
++          <content-type name="HTML" enabled="true" />
++          <content-type name="XHTML" enabled="true" />
++          <content-type name="Java" enabled="true" />
++          <content-type name="SQL" enabled="true" />
++          <content-type name="PL/SQL" enabled="true" />
++          <content-type name="JSON" enabled="true" />
++          <content-type name="JSON5" enabled="true" />
++          <content-type name="Groovy" enabled="true" />
++          <content-type name="AIDL" enabled="true" />
++          <content-type name="YAML" enabled="true" />
++          <content-type name="Manifest" enabled="true" />
++        </content-types>
++      </qualified-text-editor>
++      <record-navigation>
++        <navigation-target value="VIEWER" />
++      </record-navigation>
++    </dataset-editor-settings>
++    <code-editor-settings>
++      <general>
++        <show-object-navigation-gutter value="false" />
++        <show-spec-declaration-navigation-gutter value="true" />
++        <enable-spellchecking value="true" />
++        <enable-reference-spellchecking value="false" />
++      </general>
++      <confirmations>
++        <save-changes value="false" />
++        <revert-changes value="true" />
++      </confirmations>
++    </code-editor-settings>
++    <code-completion-settings>
++      <filters>
++        <basic-filter>
++          <filter-element type="RESERVED_WORD" id="keyword" selected="true" />
++          <filter-element type="RESERVED_WORD" id="function" selected="true" />
++          <filter-element type="RESERVED_WORD" id="parameter" selected="true" />
++          <filter-element type="RESERVED_WORD" id="datatype" selected="true" />
++          <filter-element type="RESERVED_WORD" id="exception" selected="true" />
++          <filter-element type="OBJECT" id="schema" selected="true" />
++          <filter-element type="OBJECT" id="role" selected="true" />
++          <filter-element type="OBJECT" id="user" selected="true" />
++          <filter-element type="OBJECT" id="privilege" selected="true" />
++          <user-schema>
++            <filter-element type="OBJECT" id="table" selected="true" />
++            <filter-element type="OBJECT" id="view" selected="true" />
++            <filter-element type="OBJECT" id="materialized view" selected="true" />
++            <filter-element type="OBJECT" id="index" selected="true" />
++            <filter-element type="OBJECT" id="constraint" selected="true" />
++            <filter-element type="OBJECT" id="trigger" selected="true" />
++            <filter-element type="OBJECT" id="synonym" selected="false" />
++            <filter-element type="OBJECT" id="sequence" selected="true" />
++            <filter-element type="OBJECT" id="procedure" selected="true" />
++            <filter-element type="OBJECT" id="function" selected="true" />
++            <filter-element type="OBJECT" id="package" selected="true" />
++            <filter-element type="OBJECT" id="type" selected="true" />
++            <filter-element type="OBJECT" id="dimension" selected="true" />
++            <filter-element type="OBJECT" id="cluster" selected="true" />
++            <filter-element type="OBJECT" id="dblink" selected="true" />
++          </user-schema>
++          <public-schema>
++            <filter-element type="OBJECT" id="table" selected="false" />
++            <filter-element type="OBJECT" id="view" selected="false" />
++            <filter-element type="OBJECT" id="materialized view" selected="false" />
++            <filter-element type="OBJECT" id="index" selected="false" />
++            <filter-element type="OBJECT" id="constraint" selected="false" />
++            <filter-element type="OBJECT" id="trigger" selected="false" />
++            <filter-element type="OBJECT" id="synonym" selected="false" />
++            <filter-element type="OBJECT" id="sequence" selected="false" />
++            <filter-element type="OBJECT" id="procedure" selected="false" />
++            <filter-element type="OBJECT" id="function" selected="false" />
++            <filter-element type="OBJECT" id="package" selected="false" />
++            <filter-element type="OBJECT" id="type" selected="false" />
++            <filter-element type="OBJECT" id="dimension" selected="false" />
++            <filter-element type="OBJECT" id="cluster" selected="false" />
++            <filter-element type="OBJECT" id="dblink" selected="false" />
++          </public-schema>
++          <any-schema>
++            <filter-element type="OBJECT" id="table" selected="true" />
++            <filter-element type="OBJECT" id="view" selected="true" />
++            <filter-element type="OBJECT" id="materialized view" selected="true" />
++            <filter-element type="OBJECT" id="index" selected="true" />
++            <filter-element type="OBJECT" id="constraint" selected="true" />
++            <filter-element type="OBJECT" id="trigger" selected="true" />
++            <filter-element type="OBJECT" id="synonym" selected="true" />
++            <filter-element type="OBJECT" id="sequence" selected="true" />
++            <filter-element type="OBJECT" id="procedure" selected="true" />
++            <filter-element type="OBJECT" id="function" selected="true" />
++            <filter-element type="OBJECT" id="package" selected="true" />
++            <filter-element type="OBJECT" id="type" selected="true" />
++            <filter-element type="OBJECT" id="dimension" selected="true" />
++            <filter-element type="OBJECT" id="cluster" selected="true" />
++            <filter-element type="OBJECT" id="dblink" selected="true" />
++          </any-schema>
++        </basic-filter>
++        <extended-filter>
++          <filter-element type="RESERVED_WORD" id="keyword" selected="true" />
++          <filter-element type="RESERVED_WORD" id="function" selected="true" />
++          <filter-element type="RESERVED_WORD" id="parameter" selected="true" />
++          <filter-element type="RESERVED_WORD" id="datatype" selected="true" />
++          <filter-element type="RESERVED_WORD" id="exception" selected="true" />
++          <filter-element type="OBJECT" id="schema" selected="true" />
++          <filter-element type="OBJECT" id="user" selected="true" />
++          <filter-element type="OBJECT" id="role" selected="true" />
++          <filter-element type="OBJECT" id="privilege" selected="true" />
++          <user-schema>
++            <filter-element type="OBJECT" id="table" selected="true" />
++            <filter-element type="OBJECT" id="view" selected="true" />
++            <filter-element type="OBJECT" id="materialized view" selected="true" />
++            <filter-element type="OBJECT" id="index" selected="true" />
++            <filter-element type="OBJECT" id="constraint" selected="true" />
++            <filter-element type="OBJECT" id="trigger" selected="true" />
++            <filter-element type="OBJECT" id="synonym" selected="true" />
++            <filter-element type="OBJECT" id="sequence" selected="true" />
++            <filter-element type="OBJECT" id="procedure" selected="true" />
++            <filter-element type="OBJECT" id="function" selected="true" />
++            <filter-element type="OBJECT" id="package" selected="true" />
++            <filter-element type="OBJECT" id="type" selected="true" />
++            <filter-element type="OBJECT" id="dimension" selected="true" />
++            <filter-element type="OBJECT" id="cluster" selected="true" />
++            <filter-element type="OBJECT" id="dblink" selected="true" />
++          </user-schema>
++          <public-schema>
++            <filter-element type="OBJECT" id="table" selected="true" />
++            <filter-element type="OBJECT" id="view" selected="true" />
++            <filter-element type="OBJECT" id="materialized view" selected="true" />
++            <filter-element type="OBJECT" id="index" selected="true" />
++            <filter-element type="OBJECT" id="constraint" selected="true" />
++            <filter-element type="OBJECT" id="trigger" selected="true" />
++            <filter-element type="OBJECT" id="synonym" selected="true" />
++            <filter-element type="OBJECT" id="sequence" selected="true" />
++            <filter-element type="OBJECT" id="procedure" selected="true" />
++            <filter-element type="OBJECT" id="function" selected="true" />
++            <filter-element type="OBJECT" id="package" selected="true" />
++            <filter-element type="OBJECT" id="type" selected="true" />
++            <filter-element type="OBJECT" id="dimension" selected="true" />
++            <filter-element type="OBJECT" id="cluster" selected="true" />
++            <filter-element type="OBJECT" id="dblink" selected="true" />
++          </public-schema>
++          <any-schema>
++            <filter-element type="OBJECT" id="table" selected="true" />
++            <filter-element type="OBJECT" id="view" selected="true" />
++            <filter-element type="OBJECT" id="materialized view" selected="true" />
++            <filter-element type="OBJECT" id="index" selected="true" />
++            <filter-element type="OBJECT" id="constraint" selected="true" />
++            <filter-element type="OBJECT" id="trigger" selected="true" />
++            <filter-element type="OBJECT" id="synonym" selected="true" />
++            <filter-element type="OBJECT" id="sequence" selected="true" />
++            <filter-element type="OBJECT" id="procedure" selected="true" />
++            <filter-element type="OBJECT" id="function" selected="true" />
++            <filter-element type="OBJECT" id="package" selected="true" />
++            <filter-element type="OBJECT" id="type" selected="true" />
++            <filter-element type="OBJECT" id="dimension" selected="true" />
++            <filter-element type="OBJECT" id="cluster" selected="true" />
++            <filter-element type="OBJECT" id="dblink" selected="true" />
++          </any-schema>
++        </extended-filter>
++      </filters>
++      <sorting enabled="true">
++        <sorting-element type="RESERVED_WORD" id="keyword" />
++        <sorting-element type="RESERVED_WORD" id="datatype" />
++        <sorting-element type="OBJECT" id="column" />
++        <sorting-element type="OBJECT" id="table" />
++        <sorting-element type="OBJECT" id="view" />
++        <sorting-element type="OBJECT" id="materialized view" />
++        <sorting-element type="OBJECT" id="index" />
++        <sorting-element type="OBJECT" id="constraint" />
++        <sorting-element type="OBJECT" id="trigger" />
++        <sorting-element type="OBJECT" id="synonym" />
++        <sorting-element type="OBJECT" id="sequence" />
++        <sorting-element type="OBJECT" id="procedure" />
++        <sorting-element type="OBJECT" id="function" />
++        <sorting-element type="OBJECT" id="package" />
++        <sorting-element type="OBJECT" id="type" />
++        <sorting-element type="OBJECT" id="dimension" />
++        <sorting-element type="OBJECT" id="cluster" />
++        <sorting-element type="OBJECT" id="dblink" />
++        <sorting-element type="OBJECT" id="schema" />
++        <sorting-element type="OBJECT" id="role" />
++        <sorting-element type="OBJECT" id="user" />
++        <sorting-element type="RESERVED_WORD" id="function" />
++        <sorting-element type="RESERVED_WORD" id="parameter" />
++      </sorting>
++      <format>
++        <enforce-code-style-case value="true" />
++      </format>
++    </code-completion-settings>
++    <execution-engine-settings>
++      <statement-execution>
++        <fetch-block-size value="100" />
++        <execution-timeout value="20" />
++        <debug-execution-timeout value="600" />
++        <focus-result value="false" />
++        <prompt-execution value="false" />
++      </statement-execution>
++      <script-execution>
++        <command-line-interfaces />
++        <execution-timeout value="300" />
++      </script-execution>
++      <method-execution>
++        <execution-timeout value="30" />
++        <debug-execution-timeout value="600" />
++        <parameter-history-size value="10" />
++      </method-execution>
++    </execution-engine-settings>
++    <operation-settings>
++      <transactions>
++        <uncommitted-changes>
++          <on-project-close value="ASK" />
++          <on-disconnect value="ASK" />
++          <on-autocommit-toggle value="ASK" />
++        </uncommitted-changes>
++        <multiple-uncommitted-changes>
++          <on-commit value="ASK" />
++          <on-rollback value="ASK" />
++        </multiple-uncommitted-changes>
++      </transactions>
++      <session-browser>
++        <disconnect-session value="ASK" />
++        <kill-session value="ASK" />
++        <reload-on-filter-change value="false" />
++      </session-browser>
++      <compiler>
++        <compile-type value="KEEP" />
++        <compile-dependencies value="ASK" />
++        <always-show-controls value="false" />
++      </compiler>
++      <debugger>
++        <debugger-type value="ASK" />
++      </debugger>
++    </operation-settings>
++    <ddl-file-settings>
++      <extensions>
++        <mapping file-type-id="VIEW" extensions="vw" />
++        <mapping file-type-id="TRIGGER" extensions="trg" />
++        <mapping file-type-id="PROCEDURE" extensions="prc" />
++        <mapping file-type-id="FUNCTION" extensions="fnc" />
++        <mapping file-type-id="PACKAGE" extensions="pkg" />
++        <mapping file-type-id="PACKAGE_SPEC" extensions="pks" />
++        <mapping file-type-id="PACKAGE_BODY" extensions="pkb" />
++        <mapping file-type-id="TYPE" extensions="tpe" />
++        <mapping file-type-id="TYPE_SPEC" extensions="tps" />
++        <mapping file-type-id="TYPE_BODY" extensions="tpb" />
++      </extensions>
++      <general>
++        <lookup-ddl-files value="true" />
++        <create-ddl-files value="false" />
++        <synchronize-ddl-files value="true" />
++        <use-qualified-names value="false" />
++        <make-scripts-rerunnable value="true" />
++      </general>
++    </ddl-file-settings>
++    <general-settings>
++      <regional-settings>
++        <date-format value="MEDIUM" />
++        <number-format value="UNGROUPED" />
++        <locale value="SYSTEM_DEFAULT" />
++        <use-custom-formats value="false" />
++      </regional-settings>
++      <environment>
++        <environment-types>
++          <environment-type id="development" name="Development" description="Development environment" color="-2430209/-12296320" readonly-code="false" readonly-data="false" />
++          <environment-type id="integration" name="Integration" description="Integration environment" color="-2621494/-12163514" readonly-code="true" readonly-data="false" />
++          <environment-type id="production" name="Production" description="Productive environment" color="-11574/-10271420" readonly-code="true" readonly-data="true" />
++          <environment-type id="other" name="Other" description="" color="-1576/-10724543" readonly-code="false" readonly-data="false" />
++        </environment-types>
++        <visibility-settings>
++          <connection-tabs value="true" />
++          <dialog-headers value="true" />
++          <object-editor-tabs value="true" />
++          <script-editor-tabs value="false" />
++          <execution-result-tabs value="true" />
++        </visibility-settings>
++      </environment>
++    </general-settings>
++  </component>
++  <component name="DBNavigator.Project.StatementExecutionManager">
++    <execution-variables />
++    <execution-variable-types />
++  </component>
++</project>
+\ No newline at end of file
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1696399853943)
++++ b/.gitignore	(date 1696399853943)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1696399878507)
++++ b/.idea/.gitignore	(date 1696399878507)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: src/PROFILE.form
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/PROFILE.form b/src/PROFILE.form
+new file mode 100644
+--- /dev/null	(date 1699895380254)
++++ b/src/PROFILE.form	(date 1699895380254)
+@@ -0,0 +1,113 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="PROFILE">
++  <grid id="27dc6" binding="ProfilePanel" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
++    <margin top="0" left="0" bottom="0" right="0"/>
++    <constraints>
++      <xy x="20" y="20" width="500" height="400"/>
++    </constraints>
++    <properties>
++      <background color="-5778537"/>
++    </properties>
++    <border type="none"/>
++    <children>
++      <component id="34bac" class="javax.swing.JLabel">
++        <constraints>
++          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <font name="JetBrains Mono ExtraBold" size="22" style="1"/>
++          <foreground color="-11184061"/>
++          <horizontalAlignment value="10"/>
++          <horizontalTextPosition value="11"/>
++          <icon value="icon/user.png"/>
++          <text value="PROFILE"/>
++        </properties>
++      </component>
++      <component id="796a4" class="javax.swing.JLabel" binding="fname_label">
++        <constraints>
++          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <background color="-13947600"/>
++          <foreground color="-11184061"/>
++          <text value="First Name"/>
++        </properties>
++      </component>
++      <component id="fcdd7" class="javax.swing.JLabel" binding="lname_label">
++        <constraints>
++          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="Last Name"/>
++        </properties>
++      </component>
++      <component id="d3773" class="javax.swing.JLabel" binding="email_label">
++        <constraints>
++          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="Email"/>
++        </properties>
++      </component>
++      <component id="5a9f1" class="javax.swing.JLabel" binding="password_label">
++        <constraints>
++          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="Password"/>
++        </properties>
++      </component>
++      <component id="dbdff" class="javax.swing.JButton" binding="Edit_Tombol">
++        <constraints>
++          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <text value="Edit"/>
++        </properties>
++      </component>
++      <component id="d8b75" class="javax.swing.JTextField" binding="Field_FirstName">
++        <constraints>
++          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="1ab31" class="javax.swing.JButton" binding="Hapus_Tombol">
++        <constraints>
++          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <text value="Delete"/>
++        </properties>
++      </component>
++      <component id="16f8a" class="javax.swing.JPasswordField" binding="Field_Password">
++        <constraints>
++          <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="c40db" class="javax.swing.JTextField" binding="Field_Email">
++        <constraints>
++          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="783b0" class="javax.swing.JTextField" binding="Field_LastName">
++        <constraints>
++          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++    </children>
++  </grid>
++</form>
+Index: src/LOGIN.form
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/LOGIN.form b/src/LOGIN.form
+new file mode 100644
+--- /dev/null	(date 1697706758708)
++++ b/src/LOGIN.form	(date 1697706758708)
+@@ -0,0 +1,86 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="LOGIN">
++  <grid id="27dc6" binding="LoginPanel" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
++    <margin top="0" left="0" bottom="0" right="0"/>
++    <constraints>
++      <xy x="20" y="20" width="674" height="552"/>
++    </constraints>
++    <properties>
++      <background color="-5778537"/>
++    </properties>
++    <border type="none"/>
++    <children>
++      <component id="46bfc" class="javax.swing.JLabel" binding="Email">
++        <constraints>
++          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="E-mail Addres"/>
++        </properties>
++      </component>
++      <component id="a28c4" class="javax.swing.JLabel" binding="Password">
++        <constraints>
++          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-11184061"/>
++          <text value="Password"/>
++        </properties>
++      </component>
++      <component id="75491" class="javax.swing.JTextField" binding="Email_Input">
++        <constraints>
++          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="f41c5" class="javax.swing.JPasswordField" binding="Password_Input">
++        <constraints>
++          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties/>
++      </component>
++      <component id="e40c4" class="javax.swing.JLabel" binding="Judul_Login">
++        <constraints>
++          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <font name="JetBrains Mono ExtraBold" size="20" style="1"/>
++          <foreground color="-11184061"/>
++          <icon value="icon/login.png"/>
++          <text value="LOGIN"/>
++        </properties>
++      </component>
++      <component id="943fd" class="javax.swing.JButton" binding="Register_Tombol">
++        <constraints>
++          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <text value="Register"/>
++        </properties>
++      </component>
++      <component id="fac97" class="javax.swing.JButton" binding="Login_Tombol">
++        <constraints>
++          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <text value="Login"/>
++        </properties>
++      </component>
++      <component id="92026" class="javax.swing.JCheckBox" binding="CheckBox_Remember">
++        <constraints>
++          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <background color="-5778537"/>
++          <foreground color="-11184061"/>
++          <text value="Remember Me"/>
++        </properties>
++      </component>
++    </children>
++  </grid>
++</form>
+Index: src/HISTORY.form
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HISTORY.form b/src/HISTORY.form
+new file mode 100644
+--- /dev/null	(date 1697718503878)
++++ b/src/HISTORY.form	(date 1697718503878)
+@@ -0,0 +1,44 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="HISTORY">
++  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
++    <margin top="0" left="0" bottom="0" right="0"/>
++    <constraints>
++      <xy x="20" y="20" width="500" height="400"/>
++    </constraints>
++    <properties>
++      <background color="-5778537"/>
++    </properties>
++    <border type="none"/>
++    <children>
++      <component id="4a94b" class="javax.swing.JLabel" binding="Judul_History">
++        <constraints>
++          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <font name="JetBrains Mono ExtraBold" size="14" style="1"/>
++          <text value="HISTORY"/>
++        </properties>
++      </component>
++      <component id="88c19" class="javax.swing.JTable" binding="Table_History">
++        <constraints>
++          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="50"/>
++          </grid>
++        </constraints>
++        <properties>
++          <background color="-5778537"/>
++        </properties>
++      </component>
++      <hspacer id="28eec">
++        <constraints>
++          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++      </hspacer>
++      <hspacer id="9952">
++        <constraints>
++          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++      </hspacer>
++    </children>
++  </grid>
++</form>
+Index: src/HISTORY.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/HISTORY.java b/src/HISTORY.java
+new file mode 100644
+--- /dev/null	(date 1699900482003)
++++ b/src/HISTORY.java	(date 1699900482003)
+@@ -0,0 +1,69 @@
++import javax.swing.*;
++import java.awt.*;
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import java.sql.SQLException;
++import javax.swing.table.DefaultTableModel;
++
++public class HISTORY {
++    private JTable Table_History;
++    private JLabel Judul_History;
++
++    public HISTORY() {
++        // Buat model tabel
++        DefaultTableModel tableModel = new DefaultTableModel();
++
++        // Tambahkan kolom-kolom ke model tabel
++        tableModel.addColumn("Nama Lengkap");
++        tableModel.addColumn("Berat Badan");
++        tableModel.addColumn("Tinggi Badan");
++        tableModel.addColumn("Umur");
++        tableModel.addColumn("Gender");
++        tableModel.addColumn("Nilai IMT");
++        tableModel.addColumn("Keterangan");
++
++        // Hubungkan ke database dan ambil data dari tabel IMT_User dan Main_User
++        Connection connection = DatabaseUtil.getConnection();
++        if (connection != null) {
++            try {
++                String query = "SELECT CONCAT(m.fname, ' ', m.lname) AS NamaLengkap, i.berat, i.tinggi, i.umur, i.gender, i.nilai_imt, i.keterangan " +
++                        "FROM imtpengguna i, pengguna m "; // Gantilah SomeColumn dengan kolom yang sesuai
++
++                PreparedStatement preparedStatement = connection.prepareStatement(query);
++                ResultSet resultSet = preparedStatement.executeQuery();
++
++                // Isi data dari ResultSet ke model tabel
++                while (resultSet.next()) {
++                    tableModel.addRow(new Object[] {
++                            resultSet.getString("NamaLengkap"),
++                            resultSet.getDouble("berat"),
++                            resultSet.getDouble("tinggi"),
++                            resultSet.getInt("umur"),
++                            resultSet.getString("gender"),
++                            resultSet.getDouble("nilai_imt"),
++                            resultSet.getString("keterangan")
++                    });
++                }
++            } catch (SQLException e) {
++                e.printStackTrace();
++            }
++        }
++
++        // Set model tabel ke JTable
++        Table_History.setModel(tableModel);
++    }
++
++    public static void main(String[] args) {
++        JFrame frame = new JFrame("HISTORY");
++        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
++        frame.setMinimumSize(new Dimension(800, 600));
++
++        // Membuat instance HISTORY dan menampilkan JTable
++        HISTORY history = new HISTORY();
++        frame.add(new JScrollPane(history.Table_History));
++
++        frame.pack();
++        frame.setVisible(true);
++    }
++}
+Index: src/LOGIN.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/LOGIN.java b/src/LOGIN.java
+new file mode 100644
+--- /dev/null	(date 1699858311624)
++++ b/src/LOGIN.java	(date 1699858311624)
+@@ -0,0 +1,66 @@
++import javax.swing.*;
++import java.awt.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import java.sql.SQLException;
++
++public class LOGIN {
++    private JPanel LoginPanel;
++    private JLabel Judul_Login;
++    private JLabel Email;
++    private JLabel Password;
++    private JTextField Email_Input;
++    private JPasswordField Password_Input;
++    private JCheckBox CheckBox_Remember;
++    private JButton Login_Tombol;
++    private JButton Register_Tombol;
++
++    public static void main(String[] args) {
++        JFrame frame = new JFrame("Login Form");
++        LOGIN loginForm = new LOGIN();
++        frame.setContentPane(loginForm.LoginPanel);
++        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
++        frame.setMinimumSize(new Dimension(800, 600));
++        frame.pack();
++        frame.setVisible(true);
++
++        // Tambahkan ActionListener untuk tombol Login
++        loginForm.Login_Tombol.addActionListener(new ActionListener() {
++            @Override
++            public void actionPerformed(ActionEvent e) {
++                String email = loginForm.Email_Input.getText();
++                String password = new String(loginForm.Password_Input.getPassword());
++
++                // Periksa kredensial pengguna dengan database
++                if (checkUserCredentials(email, password)) {
++                    JOptionPane.showMessageDialog(frame, "Login berhasil!");
++                    // Lanjutkan dengan logika aplikasi setelah login
++                } else {
++                    JOptionPane.showMessageDialog(frame, "Login gagal. Cek email dan password Anda.");
++                }
++            }
++        });
++    }
++
++    private static boolean checkUserCredentials(String email, String password) {
++        Connection connection = DatabaseUtil.getConnection();
++        if (connection != null) {
++            try {
++                String query = "SELECT * FROM pengguna WHERE email = ? AND password = ?";
++                PreparedStatement preparedStatement = connection.prepareStatement(query);
++                preparedStatement.setString(1, email);
++                preparedStatement.setString(2, password);
++
++                ResultSet resultSet = preparedStatement.executeQuery();
++
++                return resultSet.next(); // Jika ada hasil, kredensial benar
++            } catch (SQLException e) {
++                e.printStackTrace();
++            }
++        }
++        return false; // Jika terjadi kesalahan, atau kredensial tidak cocok
++    }
++}
