@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="IMT:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IMT_jar</output-path>
+    <root id="archive" name="IMT.jar">
+      <element id="module-output" name="IMT" />
+    </root>
+  </artifact>
+</component>

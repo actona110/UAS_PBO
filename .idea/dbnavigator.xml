@@ -1,12 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DBNavigator.Project.DataEditorManager">
+    <record-view-column-sorting-type value="BY_INDEX" />
+    <value-preview-text-wrapping value="false" />
+    <value-preview-pinned value="false" />
+  </component>
+  <component name="DBNavigator.Project.DatabaseBrowserManager">
+    <autoscroll-to-editor value="false" />
+    <autoscroll-from-editor value="true" />
+    <show-object-properties value="true" />
+    <loaded-nodes />
+  </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="d19df833-354d-457e-b1a6-1106e3bfb6d2">
       <console name="IMT" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
+  <component name="DBNavigator.Project.DatabaseEditorStateManager">
+    <last-used-providers />
+  </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="381742e7-2859-47bf-b9bc-a2c0f974b424" dataset="imt.imtpengguna" active-filter-id="" />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
+  </component>
+  <component name="DBNavigator.Project.ObjectQuickFilterManager">
+    <last-used-operator value="EQUAL" />
+    <filters />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
@@ -500,5 +532,9 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
+    <execution-variable-types />
   </component>
 </project>
